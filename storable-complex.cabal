@@ -12,11 +12,17 @@ license:             BSD3
 license-file:        LICENSE
 author:              Jed Brown <jed@59A2.org>
 maintainer:          Carter Schonwald <carter.schonwald@gmail.com>
+homepage:      https://github.com/cartazio/storable-complex
+bug-reports:   https://github.com/cartazio/storable-complex/issues
 build-type:	     Simple
 cabal-version:       >= 1.2
 extra-source-files:
   in-base/Foreign/Storable/Complex.hs
   out-of-base/Foreign/Storable/Complex.hs
+
+source-repository head
+  type: git
+  location: git@github.com:cartazio/storable-complex.git
 
 flag instanceInBase
   description: instance Storable Complex is already in 'base'
