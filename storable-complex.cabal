@@ -15,7 +15,7 @@ maintainer:          Carter Schonwald <carter.schonwald@gmail.com>
 homepage:      https://github.com/cartazio/storable-complex
 bug-reports:   https://github.com/cartazio/storable-complex/issues
 build-type:	     Simple
-cabal-version:       >= 1.2
+cabal-version:       >= 1.6
 extra-source-files:
   in-base/Foreign/Storable/Complex.hs
   out-of-base/Foreign/Storable/Complex.hs
