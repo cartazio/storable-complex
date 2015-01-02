@@ -34,5 +34,5 @@ library
     build-depends:  base >= 4.8 && < 5
     hs-source-dirs: in-base
   else
-    build-depends:  base  < 4.8 && >= 4
+    build-depends:  base  < 4.8 && >= 4.4
     hs-source-dirs: out-of-base
