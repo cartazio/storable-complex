@@ -31,8 +31,8 @@ flag instanceInBase
 library
   exposed-modules: Foreign.Storable.Complex
   if flag(instanceInBase)
-    build-depends:  base >= 4.8 && < 5
+    build-depends:  base >= 4.8
     hs-source-dirs: in-base
   else
-    build-depends:  base >= 3 && < 4.8
+    build-depends:  base  < 4.8
     hs-source-dirs: out-of-base
