@@ -19,6 +19,7 @@ cabal-version:       >= 1.6
 extra-source-files:
   in-base/Foreign/Storable/Complex.hs
   out-of-base/Foreign/Storable/Complex.hs
+  .travis.yml
 
 source-repository head
   type: git
