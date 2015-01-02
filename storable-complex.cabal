@@ -1,5 +1,5 @@
 name:                storable-complex
-version:             0.2.1.1
+version:             0.2.2
 synopsis:            Storable instance for Complex
 description:         Provides a Storable instance for Complex which is binary
 		     compatible with C99, C++ and Fortran complex data types.
