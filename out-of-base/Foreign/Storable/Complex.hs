@@ -15,23 +15,6 @@
 --
 -----------------------------------------------------------------------------
 
-{-# LANGUAGE ScopedTypeVariables #-}
-
 module Foreign.Storable.Complex () where
 
-import Data.Complex
-import Foreign.Storable
-import Foreign.Ptr
-
--- This Storable instance for Complex is binary compatible with C99, C++ and
--- Fortran complex data types.
-instance Storable a => Storable (Complex a) where
-    sizeOf z        = 2 * sizeOf (undefined :: a)
-    alignment z     = alignment (undefined :: a)
-    peek p          = do let q = castPtr p
-                         r <- peek q
-                         i <- peekElemOff q 1
-                         return (r :+ i)
-    poke p (r :+ i) = do let q = (castPtr p)
-                         poke q r
-                         pokeElemOff q 1 i
+import Data.Orphans () -- exports a Storable (Complex a) instance
