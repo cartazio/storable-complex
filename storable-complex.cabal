@@ -28,7 +28,7 @@ source-repository head
 
 library
   exposed-modules: Foreign.Storable.Complex
-  build-depends:  base
-                    ,base-orphans >= 0.3.2
+  build-depends:  base >= 4 && < 200
+                 ,base-orphans >= 0.3.2
 
   hs-source-dirs: src
